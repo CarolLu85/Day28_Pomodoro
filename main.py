@@ -18,7 +18,7 @@ def reset_timer():
     global repos
     repos = 0
     window.after_cancel(timer)
-    timer_label.config(text="Timer")
+    timer_label.config(text="Timer", fg=GREEN)
     check_mark.config(text="")
     # i got this one wrong
     canvas.itemconfig(timer_text, text="00:00")
